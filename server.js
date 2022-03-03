@@ -3,6 +3,7 @@ require('dotenv').config()
 const cors = require('cors')
 const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
+const SocketServer = require('./socketServer')
 const { ExpressPeerServer } = require('peer')
 const path = require('path')
 
@@ -12,6 +13,11 @@ app.use(cors())
 app.use(cookieParser())
 
 const http = require('http').createServer(app)
+const io = require('socket.io')(http)
+
+io.on('connection', socket => {
+  SocketServer(socket)
+})
 
 ExpressPeerServer(http, { path: '/' })
 
