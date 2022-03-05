@@ -21,6 +21,9 @@ io.on('connection', socket => {
 
 ExpressPeerServer(http, { path: '/' })
 
+app.use('/api', require('./routes/authRouter'))
+app.use('/api', require('./routes/userRouter'))
+
 const URI = process.env.MONGODB_URL
 mongoose.connect(URI, {
   useNewUrlParser: true,
