@@ -6,13 +6,18 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "server-install": "npm install"
+    "client": "cd client && npm run start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\" ",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "build": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "2.4.3",
+    "bcrypt": "^5.0.0",
     "concurrently": "^6.0.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
