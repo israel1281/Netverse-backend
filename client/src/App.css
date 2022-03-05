@@ -4,25 +4,3 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
-
-.app_body {
-display: flex;
-margin-top: 35px;
-max-width: 1200px;
-min-height: 100vh;
-margin-left: 20px;
-margin-right: 20px;
-}
-
-
-#theme {
-display: none;
-}
-
-#theme:checked ~ * {
-filter: invert(1);
-}
-
-img {
-object-fit: cover;
-}
