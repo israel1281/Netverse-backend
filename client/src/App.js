@@ -1,10 +1,12 @@
 import "./App.css"
 
+import Alert from './components/alert/Alert'
+
 function App() {
 
 
   return (
-   <div className="App">hello net</div>
+   <div className="App"><Alert /></div>
 );
 }
 
