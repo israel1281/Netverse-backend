@@ -7,7 +7,8 @@ const Loading = () => {
 
             <span className="svg">
               <img 
-               className"logo" src="https://i.ibb.co/rc7Tjmw/computer.png" 
+               className="logo" 
+               src="https://i.ibb.co/rc7Tjmw/computer.png" 
                alt="logo"
               />    
               <h5 className="text">Loading</h5>
