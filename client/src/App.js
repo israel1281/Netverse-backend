@@ -19,6 +19,8 @@ import SocketClient from './SocketClient'
 import {
   getNotifies
 } from './redux/actions/notifyAction'
+import Peer from 'peerjs'
+
 
 function App() {
   const { auth, status, modal, call } = useSelector(state => state)
