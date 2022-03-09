@@ -1,12 +1,15 @@
 import "./App.css"
 
 import Alert from './components/alert/Alert'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 function App() {
 
 
   return (
-   <div className="App"><Alert /></div>
+   <Router>
+    <Alert />
+   </Router>
 );
 }
 
