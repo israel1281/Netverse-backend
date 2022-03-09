@@ -7,8 +7,9 @@ align-items: center;
 
 .app_body {
 display: flex;
-width: inherit;
-height: inherit;
+position: absolute;
+width: auto;
+height: auto;
 }
 
 
