@@ -34,7 +34,7 @@ const Login = () => {
      <form onSubmit={handleSubmit}>
        <img 
         className="auth_logo"
-        src="https://i.bb.co/rc7Tjmw/computer.png"
+        src="https://i.ibb.co/rc7Tjmw/computer.png"
         alt="logo"
        />
 

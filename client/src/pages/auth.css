@@ -1,6 +1,6 @@
 .auth_page {
-  width: 100%;
-  height: 430px;
+  width: inherit;
+  height: inherit;
   background: #fdfdfd;
   display: flex;
   align-items: center;
