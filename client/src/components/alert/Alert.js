@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-// import Loading from './Loading'
+import Loading from './Loading'
 // import Toast from './Toast'
 
 const Notify = () => {
