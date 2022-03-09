@@ -3,17 +3,14 @@ import "./loading.css"
 
 const Loading = () => {
     return (
-        <div className="h-100 w-100 loading">
+        <div className=" h-100 w-100 loading">
 
-            <span className="svg">
-              <img 
-               className="logo" 
-               src="https://i.ibb.co/rc7Tjmw/computer.png" 
-               alt="logo"
-              />    
-              <h5 className="text">Loading</h5>
-            </span>
-            
+            <svg width="205" height="250" viewBox="0 0 40 50">
+                <circle cx="20" cy="20" r="10" stroke="#008fb3" strokeWidth="1" fill="none"
+                 />
+                <text fill="#fff" x="5" y="47">Loading</text>
+            </svg>
+
         </div>
     )
 }
