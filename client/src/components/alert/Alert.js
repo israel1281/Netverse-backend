@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { GlOBALTYPES } from '../../redux/actions/globalTypes'
+import { GLOBALTYPES } from '../../redux/actions/globalTypes'
 
 import Loading from './Loading'
 import Toast from './Toast'
