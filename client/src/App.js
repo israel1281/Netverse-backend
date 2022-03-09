@@ -12,6 +12,7 @@ import { getSuggestions } from './redux/actions/suggestionsAction'
 
 import Home from './pages/home'
 import Login from './pages/login'
+import Register from './pages/register'
 
 import io from 'socket.io-client'
 import {
@@ -73,6 +74,7 @@ function App() {
     <div className={`App ${(status || modal) && 'mode'}`}>
       <div className="app_body">
         <Route exact path="/" component={auth.token ? Home : Login} />
+        <Route exact path="/register" component={Register} />
       </div>
     </div> 
    </Router>
