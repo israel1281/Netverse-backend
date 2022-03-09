@@ -2,14 +2,12 @@ import React from 'react'
 
 const Loading = () => {
     return (
-        <div className="position-fixed w-100 h-100 text-center loading"
-        style={{background: "#0008", color: "white", top: 0, left: 0, zIndex: 50}}>
+        <div className="h-100 w-100 loading">
 
-            <svg width="205" height="250" viewBox="0 0 40 50">
-                <polygon stroke="#fff" strokeWidth="1" fill="none"
-                points="20,1 40,40 1,40" />
-                <text fill="#fff" x="5" y="47">Loading</text>
-            </svg>
+            <span className="svg">
+              <img className"logo" src="https://i.ibb.co/rc7Tjmw/computer.png" alt="logo">    
+              <h5 className="text">Loading</h5>
+            </span>
             
         </div>
     )
