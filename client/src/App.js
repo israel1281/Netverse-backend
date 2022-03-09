@@ -10,6 +10,9 @@ import { refreshToken } from './redux/actions/authAction'
 import { getPosts } from './redux/actions/postAction'
 import { getSuggestions } from './redux/actions/suggestionsAction'
 
+import Home from './pages/home'
+import Login from './pages/login'
+
 import io from 'socket.io-client'
 import {
   GLOBALTYPES
@@ -65,6 +68,13 @@ function App() {
   return (
    <Router>
     <Alert />
+
+    <input type="checkbox" id="theme" />
+    <div className={`App ${(status || modal) && 'mode'}`}>
+      <div className="app_body">
+        <Route exact path="/" component={auth.token ? Home : Login} />
+      </div>
+    </div> 
    </Router>
 );
 }
