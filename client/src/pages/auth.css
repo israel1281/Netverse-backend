@@ -19,6 +19,7 @@
   width: auto;
   border: 1px solid #ddd;
   padding: 80px 25px;
+  margin-top: 50px;
 }
 
 .auth_page form .pass {
