@@ -1,6 +1,6 @@
 .auth_page {
   width: inherit;
-  height: inherit;
+  height: auto;
   background: #fdfdfd;
   display: flex;
   align-items: center;
@@ -17,8 +17,7 @@
 
 .auth_page form {
   background: #fff;
-  max-width: 100px;
-  width: 100%;
+  width: auto;
   border: 1px solid #ddd;
   padding: 80px 25px;
 }
