@@ -1,24 +1,31 @@
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #0008;
-  color: white;
-  top: 236px;
-  right: 0.21px;
-  position: absolute;
-  width: 1200px;
-  height: 1200px;
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0008;
+    color: white;
+    top: 236px;
+    right: 0.21px;
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
 }
-
-.loading span {
-  font-size: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  animation: text 1s ease-in-out infinite;
+.loading svg{
+    font-size: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    animation: text 1s ease-in-out infinite;
 }
-
-@keyframes h5 {
-  50%{ opacity: 0.1 }
+@keyframes text{
+    50%{ opacity: 0.1 }
+}
+.loading circle{
+    stroke-dasharray: 22;
+    stroke-dashoffset: 1;
+    animation: dash 4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite alternate-reverse;
+}
+@keyframes dash{
+    to {stroke-dashoffset: 234;}
 }
