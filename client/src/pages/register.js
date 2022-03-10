@@ -1,4 +1,4 @@
-import React, { useState, useState } from 'react'
+import React, { useState } from 'react'
 import './auth.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { useHistory, Link } from 'react-router-dom'
