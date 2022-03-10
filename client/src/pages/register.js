@@ -49,7 +49,7 @@ const Register = () => {
            style={{background: `${alert.fullname ? '#fd2d6a14' : ''}`}} />
 
            <small className="form-text text-danger">
-             {alert.fullname ? alert.fullname}
+             {alert.fullname ? alert.fullname : ''}
            </small>
         </div>
 
