@@ -127,7 +127,7 @@ const Register = () => {
 
          <button type="submit" className="btn btn-dark w-100">
            Register
-         </buton>
+         </button>
 
          <p className="my-2">
            Already have an account? 
