@@ -18,7 +18,6 @@ import io from 'socket.io-client'
 import {
   GLOBALTYPES
 }  from './redux/actions/globalTypes'
-import SocketClient from './SocketClient'
 
 import {
   getNotifies
@@ -27,7 +26,7 @@ import Peer from 'peerjs'
 
 
 function App() {
-  const { auth, status, modal, call } = useSelector(state => state)
+  const { auth, status, modal } = useSelector(state => state)
   const dispatch = useDispatch()
 
   useEffect(() => {
