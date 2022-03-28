@@ -19,6 +19,7 @@ import {
   GLOBALTYPES
 }  from './redux/actions/globalTypes'
 
+import Peer from 'peerjs'
 import {
   getNotifies
 } from './redux/actions/notifyAction'
