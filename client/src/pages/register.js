@@ -35,7 +35,11 @@ const Register = () => {
     return (
         <div className="auth_page">
             <form onSubmit={handleSubmit}>
-                <h3 className="text-uppercase text-center mb-4">V-Network</h3>
+                <img 
+                  className="auth_logo"
+                  src="https://i.ibb.co/rc7Tjmw/computer.png"
+                  alt="logo"
+                />
 
                 <div className="form-group">
                     <label htmlFor="fullname">Full Name</label>
