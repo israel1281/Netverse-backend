@@ -22,7 +22,6 @@ import {
 import {
   getNotifies
 } from './redux/actions/notifyAction'
-import Peer from 'peerjs'
 
 
 function App() {
